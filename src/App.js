@@ -73,7 +73,7 @@ class App extends React.Component {
 		const city = e.target.value;
 		const country = e.target.name;
 		const number = 0.0001;
-		const api = `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${api_key}&units=metric&lang=pl`;
+		const api = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${api_key}&units=metric&lang=pl`;
 
 		fetch(api)
 			.then((response) => {
